@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <title>Projets - Gillian Chaville</title>
-    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js" integrity="sha256-JklDYODbg0X+8sPiKkcFURb5z7RvlNMIaE3RA2z97vw=" crossorigin="anonymous"></script>
+    <!--script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <script src="js/index.js"></script>
 </head>
 <body class="index">
-    <!--==============================header=================================-->
+<!--==============================header=================================-->
     <header id="header">
-        <div class="container">
-            <div class="row">
-                <div class="grid_12">
-                    <h1><a href="index.html">Gillian Chaville</a></h1>
-                </div>
-            </div>
-        </div>
         <div class="nav-container">
             <div class="container">
+
                 <div class="row">
-                    <div class="grid_12">
+                    <div class="col-md-4">
+                        <h1><a href="index.html">Gillian Chaville<span>Game Programmer</span></a></h1>
+                    </div>
+                    <div class="col-md-8">
                         <nav>
                             <ul class="sf-menu">
                                 <li><a href="index.html">Accueil</a></li>
@@ -46,10 +52,265 @@
         <div class="full-width-container block-1">
             <div class="container">
                 <div class="row">
-                    <div class="grid_12">
+                    <div class="col-md-12">
                         <header>
                             <h2><span>Projets</span></h2>
                         </header>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-target="#dinoparc">
+                                <span class="glyphicon glyphicon-chevron-right"></span> DinoParc
+                            </div>
+                            <div id="dinoparc" class="panel-body collapse project-content">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p class="text-justify">
+                                                Basé sur les concepts de Jurassic Park et de Roller Coaster Tycoon,
+                                                DinoParc est un jeu de société de gestion d’un parc où 2 à 4 joueurs
+                                                se défient de créer un parc jurassique attirant le plus de visiteurs possibles.
+                                            </p>
+                                            <p class="text-justify">
+                                                En équipe de quatre, notre objectif était d'avoir un jeu multijoueur
+                                                fonctionnel sur diverses plateformes (PC et Mobile). Ce projet a été ma première
+                                                experience un moteur de jeu.</br>
+                                                <u class="text-underline">Développement sur Unity</u> <kbd>C#</kbd> :
+                                                <ul>
+                                                    <li><p>Gestion du board (plateau de jeu)</p></li>
+                                                    <li><p>Instances de jeu (tuiles, dinosaures, cages, kiosques)</p></li>
+                                                </ul>
+                                            </p>
+                                            <p class="text-justify">
+                                                Ensuite, nous avons dû développé sur  dans le cadre d'un cours d'informatique mobile.</br>
+                                                <u>Développement sur Android Studio (Java-Android) :</u>
+                                                <ul>
+                                                    <li><p>Version Android du jeu</p></li>
+                                                    <li><p>Serveur HTTP et Version HTML du jeu</p></li>
+                                                    <li><p>Communication client-serveur via sockets en NodeJS et en Socket.IO (JavaScript et Java)</p></li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="..." class="img-responsive" alt="Responsive image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-target="#bouncyberry">
+                                <span class="glyphicon glyphicon-chevron-right"></span> BouncyBerry<!--img src="images/BouncyBerry_Logo.png" width="30%" height="30%"/-->
+                            </div>
+                            <div id="bouncyberry" class="panel-body collapse project-content">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p class="text-justify">
+                                                Bouncy Berry est un jeu platformer en 2.5D dédié aux enfants de 8 ans et plus.
+                                                Le joueur incarne un enfant, accompagné d’un monstre qu'il doit faire
+                                                maigrir et grossir un monstre afin de passer au travers d’obstacles et d’ainsi
+                                                compléter les niveaux.
+                                            </p>
+                                            <p class="text-justify">
+                                                Développé dans le cadre d'un cours de Réalisation de jeu, en collaboration
+                                                avec l'école NAD, Bouncy Berry a été notre première expérience avec l'engin.</br>
+                                                <u class="text-underline">Développement sur Unreal Engine</u> <kbd>Blueprint</kbd> :
+                                                <ul>
+                                                    <li><p>Programmation Gameplay</p></li>
+                                                    <li><p>Programmation UI (menus, HUD)</p></li>
+                                                </ul>
+                                            </p>
+                                            <video width="560" controls>
+                                                <source src="videos/bouncyberry_gameplay.mp4" type="video/mp4">
+                                                <source src="videos/bouncyberry_gameplay.ogv" type="video/ogv">
+                                                Your browser does not support HTML5 video.
+                                            </video>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/BouncyBerry_Logo.png" class="img-responsive project-img" alt="Responsive image">
+                                            <img src="images/Animation_Grossir.gif" class="img-responsive bobule" alt="Responsive image">
+                                            <img src="images/Animation_Maigrir.gif" class="img-responsive bobule" alt="Responsive image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-target="#sheetncheat">
+                                <span class="glyphicon glyphicon-chevron-right"></span> Sheet or Cheat
+                            </div>
+                            <div id="sheetncheat" class="panel-body collapse project-content">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p class="text-justify">
+                                                Il s'agit de ma première participation dans un GameJam; le
+                                                <b><a href="http://jam.aemi.ca/">WonderJam UQAC</a></b>, édition Hiver 2016.
+                                                J'ai collaboré avec une merveilleuse équipe consistué d'experimentés et de "newbie"
+                                                comme moi. Ce fut une expérience motivante et assez intense.
+                                            </p>
+                                            <p class="text-justify">
+                                                Le thème était : <b>CONNEXION</b> et les styles imposés : <u>Exploration, Action</u>
+                                            </p>
+                                            <p class="text-justify">
+                                                Nous sommes partis sur l'idée d'une soeur aidant son petit frère pour
+                                                explorer son école à la recherche des réponses d'un examen et affronter les
+                                                professeurs mécontents. Il controllait alors les deux protagonistes sans éloigner l'un de l'autre.</br>
+                                                <u class="text-underline">Développement sur Unity</u> <kbd>C#</kbd>  :
+                                                <ul>
+                                                    <li><p>Programmation Gameplay</p></li>
+                                                </ul>
+                                            </p>
+                                            <p class="text-justify">
+                                                Nous avons obtenu le <u>prix non officiel du jeu le plus badass</u> grâce à
+                                                la présence d'une intelligence artificielle, de deux styles de gameplay différents,
+                                                des niveaux de difficulté, etc.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/SheetNCheat_Logo.png" class="img-responsive project-img" alt="Responsive image">
+                                            <img src="..." class="img-responsive" alt="Responsive image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-target="#wonderjamtycoon">
+                                <span class="glyphicon glyphicon-chevron-right"></span> WonderJam Tycoon
+                            </div>
+                            <div id="wonderjamtycoon" class="panel-body collapse project-content">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p class="text-justify">
+                                                Il s'agit de ma deuxième participation dans au
+                                                <b><a href="http://jam.aemi.ca/">WonderJam UQAC</a></b>, édition Automne 2016.
+                                                Avec à peu près la même équipe que l'édition précédante, plus deux nouveaux "newbie".
+                                            </p>
+                                            <p class="text-justify">
+                                                Le thème était : <b>LE JUGEMENT</b> et les styles imposés : <u>Gestion, Compétition multijoueur</u>
+                                            </p>
+                                            <p class="text-justify">
+                                                Notre concept était basé sur le jeu Game Dev Tycoon mais remake à la façon
+                                                GameJam, d'où le titre WonderJam Tycoon. Deux joueurs s'affrontent lors du
+                                                GameJam de la société TTSoft, chacun dispose d'une équipe diversifiée et
+                                                représentant les domaines du jeu. Ils doivent ainsi satisfaire le plus possible
+                                                les dieux de ses domaines.</br>
+                                                <u class="text-underline">Développement sur Unity</u> <kbd>C#</kbd> :
+                                                <ul>
+                                                    <li><p>Concept Art (animations, characters...)</p></li>
+                                                    <li><p>"Légère aide" à la programmation gameplay</p></li>
+                                                </ul>
+                                            </p>
+                                            <p class="text-justify">
+                                                Nous avons obtenu le <u>prix Coup de coeur du jury</u> !
+                                            </p>
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/SjFglc_WFmU" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/WonderJam_Logo.png" class="img-responsive project-img" alt="Responsive image">
+                                            <img src="..." class="img-responsive" alt="Responsive image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-target="#incowming">
+                                <span class="glyphicon glyphicon-chevron-right"></span> Incowming
+                            </div>
+                            <div id="incowming" class="panel-body collapse project-content">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p class="text-justify">
+                                                Réalisé dans le cadre du cours d'Atelier en Réalisation de jeu vidéo,
+                                                Incowming est un party-game avec une ambiance de ferme. J'ai travaillé
+                                                dans une équipe perfomante et géniale de huit programmeurs de l'UQAC et
+                                            </p>
+                                            <p class="text-justify">
+                                                </br>
+                                                <u class="text-underline">Développement sur Unreal Engine</u> <kbd>C++</kbd> <kbd>Blueprint</kbd> :
+                                                <ul>
+                                                    <li><p>Programmation Gameplay</p></li>
+                                                    <li><p>Programmation V.R.</p></li>
+                                                    <li><p>Programmation Outils</p></li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/Incowming_Logo.png" class="img-responsive project-img" alt="Responsive image">
+                                            <img src="..." class="img-responsive" alt="Responsive image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-target="#unchained">
+                                <span class="glyphicon glyphicon-chevron-right"></span> Unchained
+                            </div>
+                            <div id="unchained" class="panel-body collapse project-content">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <p class="text-justify">
+                                                Accompagné de trois autres programmeurs de l'UQAC, de quatre artistes du
+                                                centre NAD et de deux sourds designers indépendants, je suis fier d'avoir participé au
+                                                <b><a href="https://montreal.ubisoft.com/fr/concours-universitaire/">Concours universitaire Ubisoft</a></b>
+                                                édition 2017. Nous avons développé notre jeu en 10 semaines intenses en travail et en énergie pour
+                                                aboutir à un prototype amazing dont je suis très fier : UNCHAINED.
+                                            </p>
+                                            <p class="text-justify">
+                                                Le thème du concours était : <b>JOUE AVEC LE TEMPS</b> et le mandat :
+                                                <ul>
+                                                    <li><p>Fournir une <u>expérience connectée pour deux joueurs</u>, online ou locale (LAN).</p></li>
+                                                    <li><p>Utiliser le <u>mode multijoueur</u> (compétitif et/ou coop).</p></li>
+                                                    <li><p>Présenter un design de <u>jeu asymétrique</u> offrant des expériences différentes.</p></li>
+                                                    <li><p>Inclure des interactions entre les joueurs se déroulant en temps réel, fournissant du
+                                                    feedback et ayant un impact sur l’expérience des joueurs.</p></li>
+                                                    <li><p>Inclure au moins <u>un élément d’intelligence artificielle</u> dans le gameplay qui peut
+                                                    nuire et/ou aider les joueurs.</p></li>
+                                                    <li><p>Présenter <u>deux éléments de concept art</u> (dans le prototype ou à part).</p></li>
+                                                    <li><p>Comprendre une <u>mécanique de jeu ayant un lien avec le temps</u>.</p></li>
+                                                </ul>
+                                            </p>
+                                            <p class="text-justify">
+                                                Notre concept est ..</br>
+                                                <u class="text-underline">Développement sur Unreal Engine</u> <kbd>C++</kbd> <kbd>Blueprint</kbd> :
+                                                <ul>
+                                                    <li><p>Programmation Gameplay</p></li>
+                                                    <li><p>Programmation I.A.</p></li>
+                                                    <li><p>Programmation Outils</p></li>
+                                            </ul>
+                                            </p>
+                                            <p class="text-justify">Footage du gameplay du Monstre</p>
+                                            <video width="560" controls>
+                                                <source src="videos/UnchainedGAMEPLAY_Monster.mp4" type="video/mp4">
+                                                <source src="videos/UnchainedGAMEPLAY_Monster.ogv" type="video/ogv">
+                                                Your browser does not support HTML5 video.
+                                            </video>
+                                            <br>
+                                            <p class="text-justify">Footage du gameplay du God</p>
+                                            <video width="560" controls>
+                                                <source src="videos/UnchainedGAMEPLAY_God.mp4" type="video/mp4">
+                                                <source src="videos/UnchainedGAMEPLAY_God.ogv" type="video/ogv">
+                                                Your browser does not support HTML5 video.
+                                            </video>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/UNCHAINED_image.jpg" class="img-responsive project-img" alt="Responsive image">
+                                            <br>
+                                            <img src="images/UnchainedCONCEPT_01.jpg" class="img-responsive project-img" alt="Responsive image">
+                                            <p class="text-justify">Concept Art par Cédric Moncheaux</p>
+                                            <br>
+                                            <img src="images/UnchainedCONCEPT_02.png" class="img-responsive project-img" alt="Responsive image">
+                                            <p class="text-justify">Concept Art par Nina Marchand</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,14 +322,15 @@
     <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="grid_12">
+                <div class="col-md-12">
                     <div class="social">
-                        <a href="#"><span class="bd-ra fa fa-facebook"></span></a>
-                        <a href="#"><span class="bd-ra fa fa-linkedin"></span></a>
-                        <a href="#"><span class="bd-ra fa fa-google-plus"></span></a>
+                        <a href="https://www.linkedin.com/in/gillian-chaville"><span class="bd-ra fa fa-linkedin"></span></a>
+                        <a href="contact.html"><span class="bd-ra fa fa-envelope"></span></a>
+                        <a href="https://github.com/gchaville"><span class="bd-ra fa fa-git"></span></a>
+                        <a href="#"><span class="bd-ra fa fa-file-pdf-o"></span></a>
                     </div>
                     <div class="copyright">
-                        <pre>Gillian Chaville © <span id="copyright-year"></span> |  Privacy Policy</pre>
+                        <pre>Copyright © Gillian Chaville <span id="copyright-year"></span> |  Privacy Policy</pre>
                     </div>
                 </div>
             </div>

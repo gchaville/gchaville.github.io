@@ -120,7 +120,7 @@
   -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-#contact-form .input-group-btn:first-child > .btn {
+#contact-form .input-group-btn:first-child > .custom-btn {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   margin: 0 -1px 0 0;
@@ -129,7 +129,7 @@
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-#contact-form .input-group-btn:last-child > .btn {
+#contact-form .input-group-btn:last-child > .custom-btn {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -154,7 +154,7 @@
   width: 1%;
   vertical-align: middle;
 }
-#contact-form .btn {
+#contact-form .custom-btn {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -182,7 +182,7 @@
 /* Contact Form Textarea 
 ========================================================*/
 #contact-form textarea {
-  width: calc(100% - 30px);
+  width: calc(100% - 20px);
   background: #ffffff;
   line-height: 24px;
   font-size: 13px;
@@ -366,7 +366,7 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
-#contact-form .btn {
+#contact-form .custom-btn {
   margin-left: auto;
   
 }
