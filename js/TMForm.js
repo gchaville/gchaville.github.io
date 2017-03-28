@@ -5,6 +5,18 @@ $(window).load(function(){
 	})
 })
 
+$(document).ready(function($){
+    var encrypted = CryptoJS.AES.encrypt("<p>818 Rue Thomas Edison, <br>Saguenay, G7H 6H3.</p> " +
+		"<p>Téléphone: (418) 376-5631 </p> " +
+        "<p>Adresse Courriel: <a href=\"mailto:gillian.chaville@gmail.com\" class=\"mail\">gillian.chaville@gmail.com</a></p>", "Informations");
+
+    var decrypted = CryptoJS.AES.decrypt(encrypted, "Informations");
+    $('.showinfos').on('click', function(event) {
+		$(this).find('a').remove();
+		$(this).append(decrypted.toString(CryptoJS.enc.Utf8));
+    });
+});
+
 ;(function($){
 	$.fn.TMForm=function(opt){
 		return this.each(TMForm)
