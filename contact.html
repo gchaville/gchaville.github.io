@@ -25,24 +25,6 @@
     <script src="js/modal.js"></script>
 
     <script src='https://www.google.com/recaptcha/api.js'></script>
-
-    <script>
-        $(function() {
-            var pull 		= $('#pull'),
-                menu 		= $('nav ul'),
-                menuHeight	= menu.height();
-            $(pull).on('click', function(e) {
-                e.preventDefault();
-                menu.slideToggle();
-            });
-            $(window).resize(function(){
-                var w = $(window).width();
-                if(w > 320 && menu.is(':hidden')) {
-                    menu.removeAttr('style');
-                }
-            });
-        });
-    </script>
 </head>
 <body>
     <!--==============================header=================================-->
@@ -151,7 +133,7 @@
                         <a href="https://www.linkedin.com/in/gillian-chaville"><span class="bd-ra fa fa-linkedin"></span></a>
                         <a href="contact.html"><span class="bd-ra fa fa-envelope"></span></a>
                         <a href="https://github.com/gchaville"><span class="bd-ra fa fa-git"></span></a>
-                        <a href="#"><span class="bd-ra fa fa-file-pdf-o"></span></a>
+                        <a href="pdf/CurriculumVitae.pdf"><span class="bd-ra fa fa-file-pdf-o"></span></a>
                     </div>
                     <div class="copyright">
                         <pre>Copyright © Gillian Chaville <span id="copyright-year"></span> |  Privacy Policy</pre>
