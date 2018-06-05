@@ -5,17 +5,6 @@ $(window).load(function(){
 	})
 })
 
-$(document).ready(function($){
-    var encrypted = CryptoJS.AES.encrypt("<p>2546 Rue L.-O.-David, <br>Montréal, QC H2A 1N1</p>" +
-		"<p>Téléphone: (418) 376-5631 </p>", "Informations");
-
-    var decrypted = CryptoJS.AES.decrypt(encrypted, "Informations");
-    $('.showinfos').on('click', function(event) {
-		$(this).find('a').remove();
-		$(this).append(decrypted.toString(CryptoJS.enc.Utf8));
-    });
-});
-
 ;(function($){
 	$.fn.TMForm=function(opt){
 		return this.each(TMForm)
